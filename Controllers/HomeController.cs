@@ -54,7 +54,7 @@ namespace opg_201910_interview.Controllers
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
 
-        public List<ClientFile> ProcessDirectory(string client)
+        private List<ClientFile> ProcessDirectory(string client)
         {
             List<ClientFile> result = new List<ClientFile>();
             
